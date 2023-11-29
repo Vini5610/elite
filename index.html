@@ -5,278 +5,292 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-
+  
   <script src="https://kit.fontawesome.com/bc48bd619e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
       integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
       integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
-  <style>
-   
-        @font-face {
-    font-family: 'Lovelo';
-    src: url('../fonts/Lovelo Black.otf');
+
+      <style>
+        
+@font-face {
+font-family: 'Lovelo';
+src: url('../fonts/Lovelo Black.otf');
 }
 
 @font-face {
-    font-family: 'PoppinsMedium';
-    src: url("../fonts/FontsFree-Net-Poppins-Medium.ttf");
+font-family: 'PoppinsMedium';
+src: url("../fonts/FontsFree-Net-Poppins-Medium.ttf");
 }
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background-color: #111111;
+background-color: #111111;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 4rem;
-  background-color: #1E1E1E;
-
-  align-items: center;
+display: flex;
+justify-content: space-between;
+padding: 1rem 4rem;
+background-color: #1E1E1E;
+align-items: center;
 }
 
 .navHeader ul {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 }
 
 .log {
-  width: 30px;
-  height: 30px;
-  background-color: blue;
-  align-items: center;
+width: 30px;
+height: 30px;
+background-color: blue;
+align-items: center;
 }
 
 .navHeader li {
-  list-style: none;
-  padding: 10px;
-  font-size: 0.8rem;
+list-style: none;
+padding: 10px;
+font-size: 0.8rem;
 }
 
 .navHeader a {
-  text-decoration: none;
-  font-weight: 600;
-  color: #36AAD9;
+text-decoration: none;
+font-weight: 600;
+color: #36AAD9;
 }
 
 button {
-  background-color: #36AAD9;
-  border: none;
-  padding: 4px 10px;
-  align-items: center;
-  border-radius: 4px;
+background-color: #36AAD9;
+border: none;
+padding: 4px 10px;
+align-items: center;
+border-radius: 4px;
 }
 
 .Apresentação {
-  display: flex;
-  justify-content: space-between;
-  padding: 4rem;
+display: flex;
+justify-content: space-between;
+padding: 4rem;
 }
 
 .a {
-  font-size: 3rem;
-  color: #36AAD9;
-  font-weight: 600;
+font-size: 3rem;
+color: #36AAD9;
+font-weight: 600;
 }
 
 .texto h2 {
-  color: white;
+color: white;
 }
 
 #a {
 
-  font-size: 0.6rem;
-  font-weight: 600;
-  color: white;
+font-size: 0.6rem;
+font-weight: 600;
+color: white;
 }
 
 #conheça_projeto {
-  margin: 1rem 0rem;
-  height: 30px;
-  background-color: #3854F2;
+margin: 1rem 0rem;
+height: 30px;
+background-color: #3854F2;
 }
 
 .img {
-  width: 250px;
-  height: 250px;
+width: 220px;
+height: 220px;
 }
 
 .img img {
-  width: 100%;
-  height: 100%;
-  object-position: center;
-  object-fit: cover;
+width: 100%;
+height: 100%;
+object-position: center;
+object-fit: cover;
 }
 
-.parcerias ul {
-  display: flex;
-  justify-content: center;
-
+.parcerias-logos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.parcerias h2 {
-  color: white;
-  text-align: center;
-}
-
-.parcerias li {
-  padding: 2rem;
-  list-style: none;
+.parcerias-logos img{
+    width: 300px;
 }
 
 .mainCards h2 {
-  text-align: center;
-  color: white;
-
-
+text-align: center;
+color: white;
 }
 
+
 .mainCards h3 {
-  text-align: center;
-  font-weight: 500;
-  font-size: medium;
-  color: white;
+text-align: center;
+font-weight: 500;
+font-size: medium;
+color: white;
+padding-top: 60px;
 }
 
 .card {
-  width: 25%;
-  height: 80%;
-  margin: 10px;
-  background-color: #36AAD9;
-  margin-top: 10px;
-  border-radius: 10px;
+width: 300px;
+height: 350px;
+margin: 10px;
+background-color: #36AAD9;
+margin-top: 10px;
+border-radius: 10px;
 
 }
 
 .cards {
-  display: flex;
-  height: 25rem;
-}
-
-.icon {
-  height: 20%;
-  width: 100%;
-  background-color: #3854F2;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+padding: 30px 10px 40px 10px;
 }
 
 .imgCard {
-  height: 40%;
-  width: 100%;
-  background-color: red;
+height: 40%;
+width: 100%;
+background-color: red;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
 }
 
 .texCard p {
-  padding: 10px;
-  font-size: x-small;
-  text-align: left;
+padding: 10px;
+font-size: x-small;
+text-align: left;
 }
 
 .fraseImpactante h2 {
-  font-size: large;
-  font-weight: 500;
+font-size: large;
+font-weight: 500;
 
+}
+
+
+/* primeiro parallax da página */
+
+.parallax-frase{
+    background-color: red;
+    background-image: url(parallax1.jpg);
+    height: 350px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.parallax-frase h2{
+    color: white;
+    font-size: 30px;
 }
 
 .fraseImpactante {
-  top: 200px;
-  background-color: #36AAD9;
-  padding: 80px 0;
+top: 200px;
+padding: 80px 0;
+color: white;
+background-color: rgba(12, 12, 12, 0.289);
+height: 55%;
+text-shadow: 1px 1px 2px black;
 }
 
 .fraseImpactante p {
-  font-size: small;
-  font-weight: 400;
-  font-style: italic;
-  padding: 10px 100px;
-  text-align: center;
+font-weight: bolder;
+font-style: italic;
+padding: 10px 100px;
+text-align: center;
+color: white;
+font-size: 20px;
 }
 
 .cardInfo {
-  display: flex;
-  padding: 10%;
-  justify-content: space-between;
+display: flex;
+padding: 10%;
+justify-content: space-between;
 }
 
 #imgInfo {
-  width: 45%;
-  height: 300px;
-  background-color: #352020;
+width: 45%;
+height: 300px;
+background-color: #352020;
 }
 
 .textnfo {
-  width: 50%;
+width: 50%;
 }
 
 .textnfo h4 {
-  font-weight: 600;
-  margin: 10px 0;
-  color: #3977F2;
+font-weight: 600;
+margin: 10px 0;
+color: #3977F2;
 }
 
 .textnfo p {
-  font-weight: 400;
-  font-size: small;
-  color: white;
+font-weight: 400;
+font-size: small;
+color: white;
 }
 
 #card2 {
-  flex-direction: row-reverse;
+flex-direction: row-reverse;
 }
 .navHeader a:hover {
-    box-shadow: 1px 1px 0px  #0c29ce;
+box-shadow: 1px 1px 0px  #0c29ce;
 
 }
 .parcerias {
-  width: 100%;
-  padding: 15px 0;
-  background: #1C1C1C;
+width: 100%;
+padding: 15px 0;
+background: #1C1C1C;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 .parcerias span {
-  color: #e3e3e3;
+color: #e3e3e3;
 }
 
 .parceiroIcon {
- 
-  padding: 1px;
-  height: 150px;
- 
+
+padding: 1px;
+height: 150px;
+
 }
 
 .texto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
 }
 
 .label {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
 }
 
 .label h2 {
-  color: #36AAD9;
-  font-weight: 800;
-  font-size: 3.2rem;
-  text-transform: uppercase;
+color: #36AAD9;
+font-weight: 800;
+font-size: 3.2rem;
+text-transform: uppercase;
 }
 
 
@@ -287,672 +301,691 @@ button {
 
 
 .parallax-2{
-    height: 450px;
-    width: 100%;
-    background: url(https://imagens.ne10.uol.com.br/veiculos/_midias/jpg/2020/08/24/_cim7167-16549882.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+height: 450px;
+width: 100%;
+background: url(https://imagens.ne10.uol.com.br/veiculos/_midias/jpg/2020/08/24/_cim7167-16549882.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
 }
 
 .parallax-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    margin: 0 auto;
-    padding-top: 150px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 60%;
+margin: 0 auto;
+padding-top: 150px;
 }
 
 .parallax-text span{
-    color: white;
-    font-family: Lovelo;
-    font-size: 42px;
-    letter-spacing: -1.5px;
-    text-align: center;
-    padding-bottom: 30px;
+color: white;
+font-family: Lovelo;
+font-size: 42px;
+letter-spacing: -1.5px;
+text-align: center;
+padding-bottom: 30px;
 }
 
 
 .parallax-button:hover > a{
-    color: black;
+color: black;
 }
 
 /* Infos */
 
 .infos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
 
-    padding-bottom: 50px;
-    padding-top: 50px;
+padding-bottom: 50px;
+padding-top: 50px;
 }
 
 /* Seção esquerda das infos */
 
 .infos-left{
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
+display: flex;
+flex-direction: column;
+padding-top: 20px;
 }
 
 .infos-section{
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 15px;
+display: flex;
+flex-direction: row;
+padding-bottom: 15px;
 }
 
 .infos-texts{
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    padding-top: 25px;
+display: flex;
+flex-direction: column;
+padding-left: 20px;
+padding-top: 25px;
 }
 
 .infos-texts span{
-    font-family: PoppinsMedium;
-    line-height: 1px;
-    font-size: 17px;
+font-family: PoppinsMedium;
+line-height: 1px;
+font-size: 17px;
 }
 
 .infos-texts span a{
-    text-decoration: none;
-    color: black;
+text-decoration: none;
+color: black;
 }
 
 .infos-texts p{
-    font-family: PoppinsMedium;
-    color: #6e6e6e;
-    font-size: 15px;
+font-family: PoppinsMedium;
+color: #6e6e6e;
+font-size: 15px;
 }
 
 .infos-section img{
-    width: 50px;
+width: 50px;
 }
 
 .infos-section-botoes{
-    display: inline-flex;
-    width: 75px;
-    height: 75px;
-    background-color: #2673A5;
-    color: white;
-    margin: 0 6px;
-    border-radius: 50px;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    transition: 0.4s;
+display: inline-flex;
+width: 75px;
+height: 75px;
+background-color: #2673A5;
+color: white;
+margin: 0 6px;
+border-radius: 50px;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+transition: 0.4s;
 }
 
 .infos-section-botoes{
-    text-decoration: none;
+text-decoration: none;
 }
 
 .infos-section-botoes:hover{
-    background-color: #154A6C;
+background-color: #154A6C;
 }
 
 .infos-section i{
-    transition: 0.4s all;
+transition: 0.4s all;
 }
 
 .infos-section-botoes:hover > i{
-    transform: scale(1.6) rotate(25deg);
+transform: scale(1.6) rotate(25deg);
 }
 
 /* Mapa da parte infos*/
 
 #map{
-    height: 300px; 
-    width: 50%;
+height: 300px; 
+width: 50%;
 }
 
 /* Botão de subir */
 
 #btnTop{
-    text-decoration: none;
-    color: white;
-    background-color: #0a3753be;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: fixed;
-    right: 40px;
-    bottom: 40px;
-    transition: .3s;
-    border-radius: 15px;
+text-decoration: none;
+color: white;
+background-color: #0a3753be;
+padding-top: 12px;
+padding-bottom: 12px;
+padding-left: 15px;
+padding-right: 15px;
+position: fixed;
+right: 40px;
+bottom: 40px;
+transition: .3s;
+border-radius: 15px;
 }
 
 #btnTop:hover{
-    background-color: #2673A5;
-    transform: scale(1.03);
+background-color: #2673A5;
+transform: scale(1.03);
 }
 
 /* Footer */
 
 footer{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background: #474747;
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+background: #474747;
 }
 
 footer img{
-    width: 200px;
-    height: 180px;
-    padding-top: 50px;
-    padding-bottom: 40px;
+width: 200px;
+height: 180px;
+padding-top: 50px;
+padding-bottom: 40px;
 }
 
 footer .column{
-    display: flex;
-    flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 
 footer .column ul{
-    list-style-type: none;
-    padding-top: 80px;
+list-style-type: none;
+padding-top: 80px;
 }
 
 footer .li-título{
-    font-size: 16px;
-    color: white;
-    font-family: PoppinsMedium;
-    user-select: none;
+font-size: 16px;
+color: white;
+font-family: PoppinsMedium;
+user-select: none;
 }
 
 footer .column ul li a{
-    font-size: 14px;
-    font-family: PoppinsMedium;
-    text-decoration: none;
-    color: #a3a3a3;
-    transition: 0.2s all ease;
+font-size: 14px;
+font-family: PoppinsMedium;
+text-decoration: none;
+color: #a3a3a3;
+transition: 0.2s all ease;
 }
 
 footer .column ul li a:hover{
-    color: #f1bc70;
+color: #f1bc70;
 }
 
 footer .column ul li a i{
-    padding-left: 5px;
+padding-left: 5px;
 }
 
 footer .footer-redes{
-    padding-top: 100px;
+padding-top: 100px;
 }
 
 footer .footer-redes a{
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
+text-decoration: none;
+color: white;
+font-size: 25px;
 }
 
 footer .footer-redes a{
-    display: inline-flex;
-    width: 50px;
-    height: 50px;
-    background-color: #a3a3a3;
-    color: white;
-    margin: 0 6px;
-    border-radius: 30px;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    transition: 0.3s all ease;
+display: inline-flex;
+width: 50px;
+height: 50px;
+background-color: #a3a3a3;
+color: white;
+margin: 0 6px;
+border-radius: 30px;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+transition: 0.3s all ease;
 }
 
 footer .footer-redes a:hover{
-    background: #f39410;
+background: #f39410;
 }
 
 footer .footer-redes a:hover > i{
-    transition: 0.4s all;
+transition: 0.4s all;
 }
 
 footer .footer-redes a:hover > .fa-instagram,
 footer .footer-redes a:hover > .fa-envelope{
-    transform: scale(1.1) rotate(-10deg);
+transform: scale(1.1) rotate(-10deg);
 }
 
 
 footer .footer-redes a:hover > .fa-youtube,
 footer .footer-redes a:hover > .fa-facebook{
-    transform: scale(1.1) rotate(10deg);
+transform: scale(1.1) rotate(10deg);
 }
 
 @media (max-width: 858px){
-    /* HEADER */
+/* HEADER */
 
-    header{
-        width: 100%;
-        height: 81vh;
-        z-index: 51;
-    }
-
-    .checkbtn{
-        display: block;
-        padding-right: 20px;
-    }
-
-    .header-top nav ul{
-        position: fixed;
-        width: 100%;
-        height: 81vh;
-        background: #D9D9D9;
-        top: 66px;
-        left: -120%;
-        text-align: center;
-        transition: all 0.5s;
-    }
-
-    .header-top nav ul{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .header-top nav ul li{
-        display: block;
-        margin: 30px 0;
-        padding-right: 50px;
-        line-height: 30px;
-    }
-
-    .header-top nav ul li:first-child{
-        display: none;
-    }
-
-    .header-top nav ul li a{
-        font-size: 20px;
-        color: #252525;
-    }
-
-    .header-top nav ul li a:hover{
-        color: #000000;
-    }
-
-    .header-top #divisor{
-        display: none;
-    }
-
-    #check:checked ~ ul{
-        left: 0;
-    }
-
-    .active::after{
-        background: none;
-    }
-
-    .header-main-text{
-        max-width: 80%;
-        padding-right: 10px;
-        line-height: 30px;
-    }
-    
-    .header-main-text h1{
-        font-size: 35px;
-    }
-
-    .header-img{
-        display: none;
-    }
-
-    .header-button{
-        width: 150px;
-        height: 33px;
-    }
-    
-    .header-button a{
-        text-decoration: none;
-        color: #000000;
-        font-size: 1rem;
-    }
-    
-    .button-text{
-        text-decoration: none;
-        color: #000000;
-        padding-left: 25px;
-        padding-top: 2px;
-    }
-    
-    .header-button .fa-instagram, .header-button .fa-youtube{
-        font-size: 1.3rem;
-        padding-right: 15px;
-        padding-top: 6.5px;
-    }
-
-    /* CORPO DA PÁGINA */
-
-    /* PROGRAMAÇÃO */
-
-    .programacao-main{
-        padding: 10px;
-        font-family: PoppinsMedium;
-    }
-    
-    .programacao-main section.dias {
-        padding-top: 20px;
-    }
-    
-    .programacao-main section.dias h1{
-        font-size: 1.5rem;
-        margin: 0;
-    }
-    
-    .divisor-main::before, .divisor-main::after {
-        width: 25%;
-    }
-    
-    .programacao-main section.dias ul li{
-        margin: 10px;
-        font-size: 0.9rem;
-    }
-    
-    .programacao-main section.dias ul{
-        margin-left: -40px;
-    }
-
-    .programacao-main section.dias ul li:first-child{
-        border-bottom: 3px solid #f39410;
-    }
-    
-    .programacao-main section.dias ul li:hover{
-        border-bottom: 3px solid #f39410;
-    }
-    
-    .programacao-main .programas .programa .foto{
-        width: 120px;
-        height: 120px;
-    }
-    
-    .programacao-main .programas .programa .foto img{
-        width: 100%;
-        height: 100%;
-        border-radius: 120px;
-        object-fit: cover;
-    }
-    
-    .programacao-main .programas .programa{
-        width: 90%;
-        margin: 0 auto;
-        align-items: center;
-        margin-bottom: 50px;
-        margin-top: 30px;
-        
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
-    .programacao-main .programas .programa .descricao{
-        width: 60%;
-        padding-left: 20px;
-        text-align: left;
-    }
-    
-    .programacao-main .programas .programa .descricao h2{
-        font-size: 1rem;
-    }
-    
-    .programacao-main .programas .programa .descricao .apresentador{
-        color: #252525;
-        font-family: PoppinsMedium;
-        margin-top: -15px;
-        font-weight: bold;
-        font-size: 0.6rem;
-    }
-
-    .programacao-main .programas .programa .descricao .text{
-        font-size: 0.7rem;
-        line-height: 1rem;
-    }
-
-    .tag-pilar{
-        padding: 5px;
-        width: 20%;
-        font-size: 0.7rem;
-    }
-    
-    .tag-alameda{
-        padding: 5px;
-        width: 35%;
-        font-size: 0.7rem;
-    }
-    
-    .programacao-button{
-        width: 45%;
-        height: 1rem;
-        margin-bottom: 40px;
-        margin-top: 50px;
-    
-        padding: 16px 50px;
-    }
-    
-    .programacao-button a{
-        font-size: 0.7rem;
-    }
-
-    /* NOTÍCIAS */
-
-    .main-noticias{
-        top: 0;
-        padding-top: 11vh;
-    }
-
-    .main-noticias div.pesquisa{
-        width: 40%;
-    }
-    
-    .main-noticias div.pesquisa i.fa-magnifying-glass{
-        transform: scale(1.1);
-        padding-right: 10px;
-    }
-    
-    .main-noticias .noticias .section-noticias{
-        padding-left: 4%;
-        padding-top: 3%;
-        padding-right: 4%;
-        padding-bottom: 1%;
-    }
-
-    div.pesquisa input{
-        width: 30vw;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        font-size: 0.8rem;
-    }
-    
-    div.pesquisa input::placeholder{
-        font-size: 0.8rem;
-    }
-
-    .main-noticias .noticias .noticia .imagem-noticia{
-        width: 40%;
-        height: 70%;
-    }
-
-    .main-noticias .noticias .noticia .texto-noticia{
-        width: 65%;
-        font-size: 0.59rem;
-        padding-left: 5%;
-    }
-    
-    .main-noticias .texto-noticia h1{
-        line-height: 1rem;
-        font-size: 0.8rem;
-        letter-spacing: -0.4px;
-    }
-    
-    .main-noticias .noticias .noticia .texto-noticia .sub-titulo{
-        font-size: 0.58rem;
-    }
-    
-    .main-noticias .noticias .noticia .texto-noticia .sub-titulo span{
-        font-size: 0.58rem;
-    }
-
-    .main-noticias .noticias .noticia{
-        margin-bottom: 5px;
-    }
-
-    .noticias-button{
-        height: 1rem;
-        margin-bottom: 40px;
-    
-        padding: 16px 40px;
-    }
-    
-    .noticias-button a{
-        text-decoration: none;
-        color: white;
-        font-family: PoppinsMedium;
-        text-transform: uppercase;
-        font-size: 0.8rem;
-        transition: 0.5s all ease;
-    }
-
-    /* PARALLAX */
-
-    .parallax-1{
-        height: 200px;
-    }
-
-    .parallax-text{
-        width: 88%;
-        margin: 0 auto;
-        padding-top: 130px;
-    }
-    
-    .parallax-text span{
-        font-size: 30px;
-        letter-spacing: -1.5px;
-        padding-bottom: 30px;
-    }
-    
-    .parallax-button{
-        padding: 8px 24px;
-    }
-    
-    .parallax-button a{
-        font-size: 0.95rem;
-    }
-
-    /* INFOS */
-
-    .infos{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    
-        padding-bottom: 50px;
-        padding-top: 50px;
-    }
-    
-    /* Seção esquerda das infos */
-    
-    .infos-left{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .infos-section{
-        padding-bottom: 15px;
-    }
-    
-    .infos-texts{
-        padding-left: 12px;
-        padding-top: 15px;
-    }
-    
-    .infos-texts span{
-        font-family: PoppinsMedium;
-        line-height: 0.5px;
-        font-size: 14px;
-    }
-    
-    .infos-texts span a{
-        text-decoration: none;
-        color: black;
-    }
-    
-    .infos-texts p{
-        font-family: PoppinsMedium;
-        color: #6e6e6e;
-        font-size: 12px;
-    }
-    
-    .infos-section-botoes{
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
-    }
-    
-    .infos-section-botoes:hover > i{
-        transform: scale(1.3) rotate(15deg);
-    }
-    
-    /* Mapa da parte infos*/
-    
-    #map{
-        height: 200px; 
-        width: 40%;
-        margin-top: 5.5%;
-    }
-
-    /* FOOTER */
-
-    footer{
-        width: 100%;
-    }
-
-    footer img{
-        display: none;
-    }
-
-    footer .column ul{
-        padding-top: 34px;
-    }
-
-    footer .column ul li,
-    footer .column ul li a,
-    footer .column ul li i{
-        font-size: 11px;
-    }
-
-    footer .column ul li i{
-        display: none;
-    }
-
-    footer .footer-redes{
-        display: flex;
-        flex-direction: column;
-        padding-top: 38px;
-        padding-right: 10px;
-        padding-bottom: 30px;
-    }
-
-    footer .footer-redes a{
-        width: 22px;
-        height: 22px;
-        font-size: 13px;
-        margin-top: 3px;
-    }
-
-    #btnTop,
-    #btnTop i{
-        width: 0;
-        height: 0;
-        padding: 0;
-        margin: 0;
-        display: none;
-    }
+.checkbtn{
+display: block;
+padding-right: 20px;
 }
-  </style>
-  <title>Document</title>
+
+.header-top nav ul{
+position: fixed;
+width: 100%;
+height: 81vh;
+background: #D9D9D9;
+top: 66px;
+left: -120%;
+text-align: center;
+transition: all 0.5s;
+}
+
+.header-top nav ul{
+display: flex;
+flex-direction: column;
+}
+
+.header-top nav ul li{
+display: block;
+margin: 30px 0;
+padding-right: 50px;
+line-height: 30px;
+}
+
+.header-top nav ul li:first-child{
+display: none;
+}
+
+.header-top nav ul li a{
+font-size: 20px;
+color: #252525;
+}
+
+.header-top nav ul li a:hover{
+color: #000000;
+}
+
+.header-top #divisor{
+display: none;
+}
+
+#check:checked ~ ul{
+left: 0;
+}
+
+.active::after{
+background: none;
+}
+
+.header-main-text{
+max-width: 80%;
+padding-right: 10px;
+line-height: 30px;
+}
+
+.header-main-text h1{
+font-size: 35px;
+}
+
+.header-img{
+display: none;
+}
+
+.header-button{
+width: 150px;
+height: 33px;
+}
+
+.header-button a{
+text-decoration: none;
+color: #000000;
+font-size: 1rem;
+}
+
+.button-text{
+text-decoration: none;
+color: #000000;
+padding-left: 25px;
+padding-top: 2px;
+}
+
+.header-button .fa-instagram, .header-button .fa-youtube{
+font-size: 1.3rem;
+padding-right: 15px;
+padding-top: 6.5px;
+}
+
+/* CORPO DA PÁGINA */
+
+/* PROGRAMAÇÃO */
+
+.programacao-main{
+padding: 10px;
+font-family: PoppinsMedium;
+}
+
+.programacao-main section.dias {
+padding-top: 20px;
+}
+
+.programacao-main section.dias h1{
+font-size: 1.5rem;
+margin: 0;
+}
+
+.divisor-main::before, .divisor-main::after {
+width: 25%;
+}
+
+.programacao-main section.dias ul li{
+margin: 10px;
+font-size: 0.9rem;
+}
+
+.programacao-main section.dias ul{
+margin-left: -40px;
+}
+
+.programacao-main section.dias ul li:first-child{
+border-bottom: 3px solid #f39410;
+}
+
+.programacao-main section.dias ul li:hover{
+border-bottom: 3px solid #f39410;
+}
+
+.programacao-main .programas .programa .foto{
+width: 120px;
+height: 120px;
+}
+
+.programacao-main .programas .programa .foto img{
+width: 100%;
+height: 100%;
+border-radius: 120px;
+object-fit: cover;
+}
+
+.programacao-main .programas .programa{
+width: 90%;
+margin: 0 auto;
+align-items: center;
+margin-bottom: 50px;
+margin-top: 30px;
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.programacao-main .programas .programa .descricao{
+width: 60%;
+padding-left: 20px;
+text-align: left;
+}
+
+.programacao-main .programas .programa .descricao h2{
+font-size: 1rem;
+}
+
+.programacao-main .programas .programa .descricao .apresentador{
+color: #252525;
+font-family: PoppinsMedium;
+margin-top: -15px;
+font-weight: bold;
+font-size: 0.6rem;
+}
+
+.programacao-main .programas .programa .descricao .text{
+font-size: 0.7rem;
+line-height: 1rem;
+}
+
+.tag-pilar{
+padding: 5px;
+width: 20%;
+font-size: 0.7rem;
+}
+
+.tag-alameda{
+padding: 5px;
+width: 35%;
+font-size: 0.7rem;
+}
+
+.programacao-button{
+width: 45%;
+height: 1rem;
+margin-bottom: 40px;
+margin-top: 50px;
+
+padding: 16px 50px;
+}
+
+.programacao-button a{
+font-size: 0.7rem;
+}
+
+/* NOTÍCIAS */
+
+.main-noticias{
+top: 0;
+padding-top: 11vh;
+}
+
+.main-noticias div.pesquisa{
+width: 40%;
+}
+
+.main-noticias div.pesquisa i.fa-magnifying-glass{
+transform: scale(1.1);
+padding-right: 10px;
+}
+
+.main-noticias .noticias .section-noticias{
+padding-left: 4%;
+padding-top: 3%;
+padding-right: 4%;
+padding-bottom: 1%;
+}
+
+div.pesquisa input{
+width: 30vw;
+padding-top: 8px;
+padding-bottom: 8px;
+font-size: 0.8rem;
+}
+
+div.pesquisa input::placeholder{
+font-size: 0.8rem;
+}
+
+.main-noticias .noticias .noticia .imagem-noticia{
+width: 40%;
+height: 70%;
+}
+
+.main-noticias .noticias .noticia .texto-noticia{
+width: 65%;
+font-size: 0.59rem;
+padding-left: 5%;
+}
+
+.main-noticias .texto-noticia h1{
+line-height: 1rem;
+font-size: 0.8rem;
+letter-spacing: -0.4px;
+}
+
+.main-noticias .noticias .noticia .texto-noticia .sub-titulo{
+font-size: 0.58rem;
+}
+
+.main-noticias .noticias .noticia .texto-noticia .sub-titulo span{
+font-size: 0.58rem;
+}
+
+.main-noticias .noticias .noticia{
+margin-bottom: 5px;
+}
+
+.noticias-button{
+height: 1rem;
+margin-bottom: 40px;
+
+padding: 16px 40px;
+}
+
+.noticias-button a{
+text-decoration: none;
+color: white;
+font-family: PoppinsMedium;
+text-transform: uppercase;
+font-size: 0.8rem;
+transition: 0.5s all ease;
+}
+
+/* PARALLAX */
+
+.parallax-1{
+height: 200px;
+}
+
+.parallax-text{
+width: 88%;
+margin: 0 auto;
+padding-top: 130px;
+}
+
+.parallax-text span{
+font-size: 30px;
+letter-spacing: -1.5px;
+padding-bottom: 30px;
+}
+
+.parallax-button{
+padding: 8px 24px;
+}
+
+.parallax-button a{
+font-size: 0.95rem;
+}
+
+/* INFOS */
+
+.infos{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+padding-bottom: 50px;
+padding-top: 50px;
+}
+
+/* Seção esquerda das infos */
+
+.infos-left{
+display: flex;
+flex-direction: column;
+}
+
+.infos-section{
+padding-bottom: 15px;
+}
+
+.infos-texts{
+padding-left: 12px;
+padding-top: 15px;
+color:rgb(255, 255, 255) ;
+}
+
+.infos-texts span{
+font-family: PoppinsMedium;
+line-height: 0.5px;
+font-size: 14px;
+}
+
+.infos-texts span a{
+text-decoration: none;
+color: rgb(255, 255, 255);
+}
+
+.infos-texts p{
+font-family: PoppinsMedium;
+color: #6e6e6e;
+font-size: 12px;
+}
+
+.infos-section-botoes{
+width: 50px;
+height: 50px;
+font-size: 20px;
+}
+
+.infos-section-botoes:hover > i{
+transform: scale(1.3) rotate(15deg);
+}
+
+/* Mapa da parte infos*/
+
+#map{
+height: 200px; 
+width: 40%;
+margin-top: 5.5%;
+}
+
+/* FOOTER */
+
+footer{
+width: 100%;
+}
+
+footer img{
+display: none;
+}
+
+footer .column ul{
+padding-top: 34px;
+}
+
+footer .column ul li,
+footer .column ul li a,
+footer .column ul li i{
+font-size: 11px;
+}
+
+footer .column ul li i{
+display: none;
+}
+
+footer .footer-redes{
+display: flex;
+flex-direction: column;
+padding-top: 38px;
+padding-right: 10px;
+padding-bottom: 30px;
+}
+
+footer .footer-redes a{
+width: 22px;
+height: 22px;
+font-size: 13px;
+margin-top: 3px;
+}
+
+#btnTop,
+#btnTop i{
+width: 0;
+height: 0;
+padding: 0;
+margin: 0;
+display: none;
+}
+}
+
+
+/*Responsivo para mobile começa aqui */
+@media (max-width: 600px) {
+    .cardInfo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #card2{
+        flex-direction: column;
+    }
+
+    #imgInfo {
+        width: 350px;
+        height: 260px;
+        background-color: #352020;
+        }
+        
+        .textnfo {
+        width: 350px;
+        }
+}
+      </style>
+ 
+  <title>Oficinas do Pilar</title>
 </head>
 
 <body>
@@ -988,32 +1021,18 @@ footer .footer-redes a:hover > .fa-facebook{
   </section>
   <div class="parcerias">
     <span>Organizações e Empresas parceiras:</span>
-    <ul>
-      <li>
-        <div class="parceiroIcon">
-          <img src="download-removebg-preview.png" alt="">
-        </div>
-      </li>
-      <li>
-        <div class="parceiroIcon">
-          <img src="download-removebg-preview.png" alt="">
-        </div>
-      </li>
-      <li>
-        <div class="parceiroIcon">
-          <img src="download-removebg-preview.png" alt="">
-        </div>
-      </li>
-    </ul>
+    <div class="parcerias-logos">
+      <div><img src="download-removebg-preview.png" alt="parceriaa 1"></div>
+      <div><img src="download-removebg-preview.png" alt="parceria 2"></div>
+      <div><img src="download-removebg-preview.png" alt="parceria 3"></div>
+      <div><img src="download-removebg-preview.png" alt="parceria 4"></div>
+    </div>
   </div>
   <section class="mainCards">
     <h3 id="tudoSobre"> Tudo Sobre</h3>
     <h2>Oficinas</h2>
     <div class="cards">
       <div class="card">
-        <div class="icon">
-          <img src="" alt="">
-        </div>
         <div class="imgCard"></div>
         <div class="texCard">
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci sapiente error, reprehenderit inventore
@@ -1021,7 +1040,6 @@ footer .footer-redes a:hover > .fa-facebook{
         </div>
       </div>
       <div class="card">
-        <div class="icon"></div>
         <div class="imgCard"></div>
         <div class="texCard">
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci sapiente error, reprehenderit inventore
@@ -1029,7 +1047,6 @@ footer .footer-redes a:hover > .fa-facebook{
         </div>
       </div>
       <div class="card">
-        <div class="icon"></div>
         <div class="imgCard"></div>
         <div class="texCard">
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci sapiente error, reprehenderit inventore
@@ -1037,7 +1054,6 @@ footer .footer-redes a:hover > .fa-facebook{
         </div>
       </div>
       <div class="card">
-        <div class="icon"></div>
         <div class="imgCard"></div>
         <div class="texCard">
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci sapiente error, reprehenderit inventore
@@ -1045,7 +1061,7 @@ footer .footer-redes a:hover > .fa-facebook{
         </div>
       </div>
     </div>
-    <section>
+    <section class="parallax-frase">
       <div class="fraseImpactante">
         <br />
         <h2>Frase do Dia</h2>
@@ -1058,93 +1074,42 @@ footer .footer-redes a:hover > .fa-facebook{
       </div>
 
     </section>
+    <br>
 
-    <section class="infoCusrsos">
-      <h3>Sobre</h3>
-      <section id="card" class="cardInfo">
+    <section>
+      <h3 class="li-título">Sobre</h3>
+      <section class="infoCusrsos">
+        <section id="card" class="cardInfo">
+          <div id="imgInfo"></div>
+          <div class="textnfo">
+            <h4>Apoio a comunidade#1</h4>
+            <p>Oferecemos cursos práticos em diversas áreas para enriquecer habilidades, criar empregos locais, impulsionar empreendedorismo e contribuir para o desenvolvimento econômico da comunidade. Capacitamos jovens, investindo no futuro e fortalecendo laços.</p>
+          </div>
+        </section>
+      </section>
+      
+        <section class="infoCusrsos">
+      <section id="card2" class="cardInfo">
         <div id="imgInfo"></div>
-
         <div class="textnfo">
-          <h4>Apoio a comunidade#1</h4>
-          <p>Nosso projeto desempenha um papel crucial no apoio à comunidade, oferecendo cursos práticos em áreas
-            variadas, como pintura industrial, culinária de confeitaria, marcenaria, primeiros socorros e costura. Isso
-            não só enriquece as habilidades e conhecimento dos participantes, mas também cria oportunidades de emprego
-            local, impulsiona o empreendedorismo e contribui para o desenvolvimento econômico da comunidade. Além disso,
-            ao capacitar jovens com habilidades valiosas, estamos investindo no futuro da comunidade e fortalecendo seus
-            laços.</p>
+          <h4>auto sustentabilidade#2</h4>
+          <p>
+            Projeto oferece cursos práticos a jovens de 17 a 24 anos, ensinando habilidades em pintura, culinária, marcenaria, primeiros socorros e costura. Capacitamos para o trabalho ou empreendedorismo, promovendo independência financeira e impacto positivo na vida deles e da comunidade.</p>
         </div>
       </section>
+        </section>
+      
+      <section class="infoCusrsos">
+        <section id="card" class="cardInfo">
+        <div id="imgInfo"></div>
+        <div class="textnfo">
+          <h4>crie sua propria renda#3</h4>
+          <p>Projeto oferece cursos práticos em pintura, culinária, marcenaria, primeiros socorros e costura, capacitando para negócios próprios, serviços autônomos ou empregos, promovendo independência financeira e crescimento econômico local.
+          </p>
+        </div>
+        </section>
+      </section>
     </section>
-  </section>
-
-  <section class="infoCusrsos">
-    <section id="card2" class="cardInfo">
-
-      <div id="imgInfo"></div>
-
-      <div class="textnfo">
-        <h4>auto sustentabilidade#2</h4>
-        <p>
-          O nosso projeto de cursos práticos para jovens entre 17 e 24 anos não apenas oferece valiosas habilidades, mas
-          também atua como um catalisador para o auto sustento desses jovens. Ao adquirir habilidades em pintura
-          industrial, culinária de confeitaria, marcenaria, primeiros socorros e costura, eles ganham a capacidade de se
-          destacar no mercado de trabalho ou iniciar seus próprios negócios. Essas habilidades não só aumentam suas
-          perspectivas de emprego, mas também os capacitam a serem financeiramente independentes e a alcançarem o auto
-          sustento, criando um impacto positivo em suas vidas e na comunidade..</p>
-      </div>
-    </section>
-  </section>
-  </section>
-
-  <section class="infoCusrsos">
-    <section id="card" class="cardInfo">
-      <div id="imgInfo"></div>
-
-      <div class="textnfo">
-        <h4>crie sua propria renda#3</h4>
-        <p>O nosso projeto proporciona às pessoas as habilidades necessárias para criar sua própria renda. Ao oferecer
-          cursos práticos em áreas como pintura industrial, culinária de confeitaria, marcenaria, primeiros socorros e
-          costura, capacitamos os participantes a iniciar pequenos negócios, oferecer serviços autônomos ou encontrar
-          oportunidades de emprego que lhes permitam gerar sua própria renda. Isso não apenas promove a independência
-          financeira, mas também contribui para o crescimento econômico da comunidade..
-        </p>
-      </div>
-    </section>
-  </section>
-  </section>
-
-
-
-  </section>
-  </section>
-  </section>
-
-
-  </section>
-  </section>
-  </section>
-
-
-  <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <!-- Estrutura -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>elite</title>
-
-    <!-- Links -->
-    
-   
-    
-
-</head>
-
-<body>
-   
-
        
 
     <div class="parallax-2">
@@ -1163,6 +1128,7 @@ footer .footer-redes a:hover > .fa-facebook{
                 <a class="infos-section-botoes" href="#"><i class="fa-solid fa-phone-flip"></i></a>
                 <div class="infos-texts">
                     <span>Fale Conosco</span>
+                    <br>
                     <p>(81) 666999</p>
                 </div>
             </div>
@@ -1172,6 +1138,7 @@ footer .footer-redes a:hover > .fa-facebook{
                         class="fa-solid fa-envelope"></i></a>
                 <div class="infos-texts">
                     <span><a href="#" target="_blank">Enviar Email</a></span>
+                    <br>
                     <p>oficinasd0pila@gmail.com</p>
                 </div>
             </div>
@@ -1182,6 +1149,7 @@ footer .footer-redes a:hover > .fa-facebook{
                 <div class="infos-texts">
                     <span><a href="#" target="_blank">Siga nossa
                             Página</a></span>
+                            <br>
                     <p>@oficinasdopilar</p>
                 </div>
             </div>
@@ -1257,26 +1225,28 @@ ocultar()
             <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
         </div>
     </footer>
+
+
+
+</html>
 </body>
+
 <script>
 
-    /*mapa*/
-    var map = L.map('map', {
-    center: [-8.063, -34.873],
-    zoom: 16
+  /*mapa*/
+  var map = L.map('map', {
+  center: [-8.063, -34.873],
+  zoom: 16
 });
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  maxZoom: 19,
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
 var marker = L.marker([-8.063, -34.873]).addTo(map);
 marker.bindPopup("<b>ETE Porto Digital</b><br>Av. Rio Branco").openPopup();
 
 </script>
-
-</html>
-</body>
 
 </html>
