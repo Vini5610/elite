@@ -1,1267 +1,835 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  <script src="https://kit.fontawesome.com/bc48bd619e.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tudo Sobre</title>
 
-      <style>
-        
-@font-face {
-font-family: 'Lovelo';
-src: url('../fonts/Lovelo Black.otf');
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Inter', sans-serif;
 }
-
-@font-face {
-font-family: 'PoppinsMedium';
-src: url("../fonts/FontsFree-Net-Poppins-Medium.ttf");
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap');
-
-* {
-margin: 0;
-padding: 0;
-font-family: 'Poppins', sans-serif;
-}
-
-body {
-background-color: #111111;
-}
-
-header {
-display: flex;
-justify-content: space-between;
-padding: 1rem 4rem;
-background-color: #1E1E1E;
-align-items: center;
-}
-
-.navHeader ul {
-display: flex;
-align-items: center;
-}
-
-.log {
-width: 30px;
-height: 30px;
-background-color: blue;
-align-items: center;
-}
-
-.navHeader li {
-list-style: none;
-padding: 10px;
-font-size: 0.8rem;
-}
-
-.navHeader a {
-text-decoration: none;
-font-weight: 600;
-color: #36AAD9;
-}
-
-button {
-background-color: #36AAD9;
-border: none;
-padding: 4px 10px;
-align-items: center;
-border-radius: 4px;
-}
-
-.Apresentação {
-display: flex;
-justify-content: space-between;
-padding: 4rem;
-}
-
-.a {
-font-size: 3rem;
-color: #36AAD9;
-font-weight: 600;
-}
-
-.texto h2 {
-color: white;
-}
-
-#a {
-
-font-size: 0.6rem;
-font-weight: 600;
-color: white;
-}
-
-#conheça_projeto {
-margin: 1rem 0rem;
-height: 30px;
-background-color: #3854F2;
-}
-
-.img {
-width: 220px;
-height: 220px;
-}
-
-.img img {
-width: 100%;
-height: 100%;
-object-position: center;
-object-fit: cover;
-}
-
-.parcerias-logos{
+.NavHeader{
     display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.listfooter{
+    display: inline-flex;
+}
+.listfooter li{
+    color: #CDCDCD;
+}
+.textinf h2{
+    text-align: left;
+}
+.NavHeader ul{
+    display: flex;
+}
+.textMobile p{
+    display: none;
+}
+#ImgLogo{
+    block-size: 50px;
+}
+.CardHeader{
+    display: flex;
+    justify-content: space-between;
+}
+#ImgHeader{
+    block-size: 300px;
+    align-items: flex-end;
+}   
+.barra{
+    width: 100%;
+    height: 76px;
+    background-image: url('./assets/memphis-style\ \(1\)\ 3.png');
+    margin: 40px auto;
+}
+#Patrocinio{
+    margin: 20px auto;
+    background-color: #145374;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 130px;
+    list-style: none;
+    
+}
+#imgPatricinio{
+    block-size: 40px;
+}
+#imgPatricinio2{
+    block-size: 130px;
+}
+#imgPatricinio3{
+    block-size: 60px;
+}
+header{
+    background-image: url("./assets/Rectangle\ 294.png");
+}
+.NavHeader{
+    background-color: #fff;
+    align-items: center;
+}
+.CardHeader{
+    align-items: center;
+}
+.NavHeader li{
+    margin: 10px;
+
+
+}
+.NavHeader ul{
+    list-style: none;
+}
+.NavHeader a {
+    text-decoration: none;
+    color: #03334D;
+}
+.TextCard p{
+    font-size: 20px;
+}
+.TextCard h2{
+    font-size: 70px;
+    font-weight: 600;
+    color: #ffff;
+}
+.TextCard{
+    padding-left: 150px;
+}
+.TextCard ul{
+    list-style: none;
+}
+.TextCard p{
+    color: #fff;
+}
+.TextCard button{
+    background-color: #1474f1;
+    width: 115px;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    color: #fff;
+}
+.conteinetFistSection{
+    display: flex;
+    width: 60vw;
+    border-radius: 10px;
+
+    overflow-x: auto;
+    margin: auto;
+}
+.conteinetFistSection span{
+    align-items: center;
+    min-height: 200px;
+    min-width: 200px;
+    background-color: #03334D;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 7px 6px 3px -1px rgba(124,125,143,0.2);
+-webkit-box-shadow: 7px 6px 3px -1px rgba(124,125,143,0.2);
+-moz-box-shadow: 7px 6px 3px -1px rgba(124,125,143,0.2);
+}
+.conteinetFistSection img {
+     text-align: center;
+}
+
+
+
+.textinf h2{
+    color: #093671;
+
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.textinf h3{
+}
+
+
+
+
+
+
+
+
+
+.conteinetFistSection {
+    display: flex;
+    align-items: center; /* Alinha os spans verticalmente */
+}
+
+.conteinetFistSection span {
+    text-align: center; /* Centraliza o conteúdo dentro de cada span */
+}
+
+.conteinetFistSection img {
+    display: block; /* Remove espaços extras abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente dentro do span */
+    vertical-align: middle; /* Centraliza a imagem verticalmente dentro do span */
+}
+
+.conteinetFistSection p{
+    align-items: flex-end;
+}
+
+footer{
+    border-top:2px solid #03334D;
+}
+
+#Copy p{
+    font-style: italic;
+    text-align: center;
+    background-color: #0a2446;
+    width: 100%;
+    color: #CDCDCD;
+    font-weight: 300;
+    font-size: x-small;
+    padding: 5px 0;
+}
+
+
+#title{
+    font-size: x-large;
+    color: #093671;
+}
+#titleConfira{
+    text-align: center;
+    margin: 40px auto;
+}
+.conteinetFistSection p{
+    
+    text-align: center;
+    align-items: flex-end;
+}
+.InformacoesCursos{
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-between;
+}
+.Sobre{
+    padding: 150px 60px;
+}
+#InfoImg{
+    block-size: 500px;
+}
+.textinf{
+    width: 80%;
+    display: grid;
+    text-align: justify;
+}
+.Sobre h1{
+    text-align: center;
+}
+#QuemSomos{
+    text-align: center;
+}
+.NossoPublico{
+    background-color: #145374;
+    height: 300px;
+    
+}
+.NossoPublico p{
+    font-size: large;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    width: 60%;
+    margin: auto;
+    align-items: center;
+}
+.NossoPublico h1{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    color: #fff;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.NossoPublico div{
+    align-items: center;
+    padding: 80px;
+}
+.contato{
+
+    display: flex;
+    margin: 20px;
+}
+.contato img{
+    background-color: #03334D;
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+}
+.contato li{
+    list-style: none;
+    margin: 0 10px;
+}
+#InformacoesdeContato{
+    padding: 80px;
+}
+.InformacoesdeContato{
+    display: flex;
+}
+.ConteinerContato{
+    display: flex;
+}
+.listfooter ul{
+    padding: 0 10px;
+}
+footer{
+    display: flex;
+    justify-content: space-between; 
+    padding: 100px;
+    background-color:#03334D;
+align-items: center;
+}
+footer ul {
+    list-style: none;
+}
+footer{
+    justify-content: space-between;
+}
+#ButtonHeader{
+    background-color: #1474f1;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+.conteinetFistSection{
+    color: #fff;
+}
+#ImgFootet{
+    block-size: 150px;
+}
+.NavHeader li:hover{
+    color: #0a2446;
+}
+.NavHeader{
+    border-bottom: 1px solid gray;
+}
+.InformacoesCursos img{
+    block-size: auto;
+    background-color: #093671;
+}
+#InformacoesdeContato{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.RedesContato{
+    display: block;
+}
+.contato{
+    display: block;
     justify-content: center;
-    flex-wrap: wrap;
 }
-
-.parcerias-logos img{
-    width: 300px;
+.RedesContato{
+    display: block;
 }
-
-.mainCards h2 {
-text-align: center;
-color: white;
+.RedesContato li{
+    font-size: smaller;
 }
-
-
-.mainCards h3 {
-text-align: center;
-font-weight: 500;
-font-size: medium;
-color: white;
-padding-top: 60px;
+.conteinetFistSection img{
+    block-size: 10vh;
 }
-
-.card {
-width: 300px;
-height: 350px;
-margin: 10px;
-background-color: #36AAD9;
-margin-top: 10px;
-border-radius: 10px;
-
-}
-
-.cards {
-display: flex;
-justify-content: space-evenly;
-flex-wrap: wrap;
-padding: 30px 10px 40px 10px;
-}
-
-.imgCard {
-height: 40%;
-width: 100%;
-background-color: red;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-}
-
-.texCard p {
-padding: 10px;
-font-size: x-small;
-text-align: left;
-}
-
-.fraseImpactante h2 {
-font-size: large;
-font-weight: 500;
-
-}
-
-
-/* primeiro parallax da página */
-
-.parallax-frase{
-    background-color: red;
-    background-image: url(parallax1.jpg);
-    height: 350px;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.parallax-frase h2{
-    color: white;
-    font-size: 30px;
-}
-
-.fraseImpactante {
-top: 200px;
-padding: 80px 0;
-color: white;
-background-color: rgba(12, 12, 12, 0.289);
-height: 55%;
-text-shadow: 1px 1px 2px black;
-}
-
-.fraseImpactante p {
-font-weight: bolder;
-font-style: italic;
-padding: 10px 100px;
-text-align: center;
-color: white;
-font-size: 20px;
-}
-
-.cardInfo {
-display: flex;
-padding: 10%;
-justify-content: space-between;
-}
-
-#imgInfo {
-width: 45%;
-height: 300px;
-background-color: #352020;
-}
-
-.textnfo {
-width: 50%;
-}
-
-.textnfo h4 {
-font-weight: 600;
-margin: 10px 0;
-color: #3977F2;
-}
-
-.textnfo p {
-font-weight: 400;
-font-size: small;
-color: white;
-}
-
-#card2 {
-flex-direction: row-reverse;
-}
-.navHeader a:hover {
-box-shadow: 1px 1px 0px  #0c29ce;
-
-}
-.parcerias {
-width: 100%;
-padding: 15px 0;
-background: #1C1C1C;
-
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-
-.parcerias span {
-color: #e3e3e3;
-}
-
-.parceiroIcon {
-
-padding: 1px;
-height: 150px;
-
-}
-
-.texto {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-}
-
-.label {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-}
-
-.label h2 {
-color: #36AAD9;
-font-weight: 800;
-font-size: 3.2rem;
-text-transform: uppercase;
+.VideoSection video{
+  width: 700px;
 }
 
 
 
 
 
-/* Parallax */
 
-
-.parallax-2{
-height: 450px;
-width: 100%;
-background: url(https://imagens.ne10.uol.com.br/veiculos/_midias/jpg/2020/08/24/_cim7167-16549882.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-background-position: center;
+.RedesContato{
+    width: 100%;
 }
-
-.parallax-text{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-width: 60%;
-margin: 0 auto;
-padding-top: 150px;
-}
-
-.parallax-text span{
-color: white;
-font-family: Lovelo;
-font-size: 42px;
-letter-spacing: -1.5px;
-text-align: center;
-padding-bottom: 30px;
-}
-
-
-.parallax-button:hover > a{
-color: black;
-}
-
-/* Infos */
-
-.infos{
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-
-padding-bottom: 50px;
-padding-top: 50px;
-}
-
-/* Seção esquerda das infos */
-
-.infos-left{
-display: flex;
-flex-direction: column;
-padding-top: 20px;
-}
-
-.infos-section{
-display: flex;
-flex-direction: row;
-padding-bottom: 15px;
-}
-
-.infos-texts{
-display: flex;
-flex-direction: column;
-padding-left: 20px;
-padding-top: 25px;
-}
-
-.infos-texts span{
-font-family: PoppinsMedium;
-line-height: 1px;
-font-size: 17px;
-color: white;
-}
-
-.infos-texts span a{
-text-decoration: none;
-color: rgb(255, 255, 255);
-}
-
-.infos-texts p{
-font-family: PoppinsMedium;
-color: #6e6e6e;
-font-size: 15px;
-}
-
-.infos-section img{
-width: 50px;
-}
-
-.infos-section-botoes{
-display: inline-flex;
-width: 75px;
-height: 75px;
-background-color: #2673A5;
-color: white;
-margin: 0 6px;
-border-radius: 50px;
-justify-content: center;
-align-items: center;
-font-size: 30px;
-transition: 0.4s;
-}
-
-.infos-section-botoes{
-text-decoration: none;
-}
-
-.infos-section-botoes:hover{
-background-color: #154A6C;
-}
-
-.infos-section i{
-transition: 0.4s all;
-}
-
-.infos-section-botoes:hover > i{
-transform: scale(1.6) rotate(25deg);
-}
-
-/* Mapa da parte infos*/
-
 #map{
-height: 300px; 
-width: 50%;
-}
-
-/* Botão de subir */
-
-#btnTop{
-text-decoration: none;
-color: white;
-background-color: #0a3753be;
-padding-top: 12px;
-padding-bottom: 15px;
-padding-left: 15px;
-padding-right: 15px;
-position: fixed;
-right: 40px;
-bottom: 90px;
-transition: .3s;
-border-radius: 15px;
-}
-
-#btnTop:hover{
-background-color: #2673A5;
-transform: scale(1.03);
-}
-
-/* Footer */
-
-footer{
-width: 100%;
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-background: #474747;
-}
-
-footer img{
-width: 200px;
-height: 180px;
-padding-top: 50px;
-padding-bottom: 40px;
-}
-
-footer .column{
-display: flex;
-flex-direction: column;
-}
-
-footer .column ul{
-list-style-type: none;
-padding-top: 80px;
-}
-
-footer .li-título{
-font-size: 16px;
-color: white;
-font-family: PoppinsMedium;
-user-select: none;
-}
-
-footer .column ul li a{
-font-size: 14px;
-font-family: PoppinsMedium;
-text-decoration: none;
-color: #a3a3a3;
-transition: 0.2s all ease;
-}
-
-footer .column ul li a:hover{
-color: #f1bc70;
-}
-
-footer .column ul li a i{
-padding-left: 5px;
-}
-
-footer .footer-redes{
-padding-top: 100px;
-}
-
-footer .footer-redes a{
-text-decoration: none;
-color: white;
-font-size: 25px;
-}
-
-footer .footer-redes a{
-display: inline-flex;
-width: 50px;
-height: 50px;
-background-color: #a3a3a3;
-color: white;
-margin: 0 6px;
-border-radius: 30px;
-justify-content: center;
-align-items: center;
-font-size: 30px;
-transition: 0.3s all ease;
-}
-
-footer .footer-redes a:hover{
-background: #f39410;
-}
-
-footer .footer-redes a:hover > i{
-transition: 0.4s all;
-}
-
-footer .footer-redes a:hover > .fa-instagram,
-footer .footer-redes a:hover > .fa-envelope{
-transform: scale(1.1) rotate(-10deg);
-}
-
-
-footer .footer-redes a:hover > .fa-youtube,
-footer .footer-redes a:hover > .fa-facebook{
-transform: scale(1.1) rotate(10deg);
-}
-
-@media (max-width: 858px){
-/* HEADER */
-
-.checkbtn{
-display: block;
-padding-right: 20px;
-}
-
-.header-top nav ul{
-position: fixed;
-width: 100%;
-height: 81vh;
-background: #D9D9D9;
-top: 66px;
-left: -120%;
-text-align: center;
-transition: all 0.5s;
-}
-
-.header-top nav ul{
-display: flex;
-flex-direction: column;
-}
-
-.header-top nav ul li{
-display: block;
-margin: 30px 0;
-padding-right: 50px;
-line-height: 30px;
-}
-
-.header-top nav ul li:first-child{
-display: none;
-}
-
-.header-top nav ul li a{
-font-size: 20px;
-color: #252525;
-}
-
-.header-top nav ul li a:hover{
-color: #000000;
-}
-
-.header-top #divisor{
-display: none;
-}
-
-#check:checked ~ ul{
-left: 0;
-}
-
-.active::after{
-background: none;
-}
-
-.header-main-text{
-max-width: 80%;
-padding-right: 10px;
-line-height: 30px;
-}
-
-.header-main-text h1{
-font-size: 35px;
-}
-
-.header-img{
-display: none;
-}
-
-.header-button{
-width: 150px;
-height: 33px;
-}
-
-.header-button a{
-text-decoration: none;
-color: #000000;
-font-size: 1rem;
-}
-
-.button-text{
-text-decoration: none;
-color: #000000;
-padding-left: 25px;
-padding-top: 2px;
-}
-
-.header-button .fa-instagram, .header-button .fa-youtube{
-font-size: 1.3rem;
-padding-right: 15px;
-padding-top: 6.5px;
-}
-
-/* CORPO DA PÁGINA */
-
-/* PROGRAMAÇÃO */
-
-.programacao-main{
-padding: 10px;
-font-family: PoppinsMedium;
-}
-
-.programacao-main section.dias {
-padding-top: 20px;
-}
-
-.programacao-main section.dias h1{
-font-size: 1.5rem;
-margin: 0;
-}
-
-.divisor-main::before, .divisor-main::after {
-width: 25%;
-}
-
-.programacao-main section.dias ul li{
-margin: 10px;
-font-size: 0.9rem;
-}
-
-.programacao-main section.dias ul{
-margin-left: -40px;
-}
-
-.programacao-main section.dias ul li:first-child{
-border-bottom: 3px solid #f39410;
-}
-
-.programacao-main section.dias ul li:hover{
-border-bottom: 3px solid #f39410;
-}
-
-.programacao-main .programas .programa .foto{
-width: 120px;
-height: 120px;
-}
-
-.programacao-main .programas .programa .foto img{
-width: 100%;
-height: 100%;
-border-radius: 120px;
-object-fit: cover;
-}
-
-.programacao-main .programas .programa{
-width: 90%;
-margin: 0 auto;
-align-items: center;
-margin-bottom: 50px;
-margin-top: 30px;
-
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-}
-
-.programacao-main .programas .programa .descricao{
-width: 60%;
-padding-left: 20px;
-text-align: left;
-}
-
-.programacao-main .programas .programa .descricao h2{
-font-size: 1rem;
-}
-
-.programacao-main .programas .programa .descricao .apresentador{
-color: #252525;
-font-family: PoppinsMedium;
-margin-top: -15px;
-font-weight: bold;
-font-size: 0.6rem;
-}
-
-.programacao-main .programas .programa .descricao .text{
-font-size: 0.7rem;
-line-height: 1rem;
-}
-
-.tag-pilar{
-padding: 5px;
-width: 20%;
-font-size: 0.7rem;
-}
-
-.tag-alameda{
-padding: 5px;
-width: 35%;
-font-size: 0.7rem;
-}
-
-.programacao-button{
-width: 45%;
-height: 1rem;
-margin-bottom: 40px;
-margin-top: 50px;
-
-padding: 16px 50px;
-}
-
-.programacao-button a{
-font-size: 0.7rem;
-}
-
-/* NOTÍCIAS */
-
-.main-noticias{
-top: 0;
-padding-top: 11vh;
-}
-
-.main-noticias div.pesquisa{
-width: 40%;
-}
-
-.main-noticias div.pesquisa i.fa-magnifying-glass{
-transform: scale(1.1);
-padding-right: 10px;
-}
-
-.main-noticias .noticias .section-noticias{
-padding-left: 4%;
-padding-top: 3%;
-padding-right: 4%;
-padding-bottom: 1%;
-}
-
-div.pesquisa input{
-width: 30vw;
-padding-top: 8px;
-padding-bottom: 8px;
-font-size: 0.8rem;
-}
-
-div.pesquisa input::placeholder{
-font-size: 0.8rem;
-}
-
-.main-noticias .noticias .noticia .imagem-noticia{
-width: 40%;
-height: 70%;
-}
-
-.main-noticias .noticias .noticia .texto-noticia{
-width: 65%;
-font-size: 0.59rem;
-padding-left: 5%;
-}
-
-.main-noticias .texto-noticia h1{
-line-height: 1rem;
-font-size: 0.8rem;
-letter-spacing: -0.4px;
-}
-
-.main-noticias .noticias .noticia .texto-noticia .sub-titulo{
-font-size: 0.58rem;
-}
-
-.main-noticias .noticias .noticia .texto-noticia .sub-titulo span{
-font-size: 0.58rem;
-}
-
-.main-noticias .noticias .noticia{
-margin-bottom: 5px;
-}
-
-.noticias-button{
-height: 1rem;
-margin-bottom: 40px;
-
-padding: 16px 40px;
-}
-
-.noticias-button a{
-text-decoration: none;
-color: white;
-font-family: PoppinsMedium;
-text-transform: uppercase;
-font-size: 0.8rem;
-transition: 0.5s all ease;
-}
-
-/* PARALLAX */
-
-.parallax-1{
-height: 200px;
-}
-
-.parallax-text{
-width: 88%;
-margin: 0 auto;
-padding-top: 130px;
-}
-
-.parallax-text span{
-font-size: 30px;
-letter-spacing: -1.5px;
-padding-bottom: 30px;
-}
-
-.parallax-button{
-padding: 8px 24px;
-}
-
-.parallax-button a{
-font-size: 0.95rem;
-}
-
-/* INFOS */
-
-.infos{
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-
-padding-bottom: 50px;
-padding-top: 50px;
-}
-
-/* Seção esquerda das infos */
-
-.infos-left{
-display: flex;
-flex-direction: column;
-}
-
-.infos-section{
-padding-bottom: 15px;
-}
-
-.infos-texts{
-padding-left: 12px;
-padding-top: 15px;
-color:rgb(255, 255, 255) ;
-}
-
-.infos-texts span{
-font-family: PoppinsMedium;
-line-height: 0.5px;
-font-size: 14px;
-}
-
-.infos-texts span a{
-text-decoration: none;
-color: rgb(255, 255, 255);
-}
-
-.infos-texts p{
-font-family: PoppinsMedium;
-color: #6e6e6e;
-font-size: 12px;
-}
-
-.infos-section-botoes{
-width: 50px;
-height: 50px;
-font-size: 20px;
-}
-
-.infos-section-botoes:hover > i{
-transform: scale(1.3) rotate(15deg);
-}
-
-/* Mapa da parte infos*/
-
-#map{
-height: 200px; 
-width: 40%;
-margin-top: 5.5%;
-}
-
-/* FOOTER */
-
-footer{
-width: 100%;
-}
-
-footer img{
-display: none;
-}
-
-footer .column ul{
-padding-top: 34px;
-}
-
-footer .column ul li,
-footer .column ul li a,
-footer .column ul li i{
-font-size: 11px;
-}
-
-footer .column ul li i{
-display: none;
-}
-
-footer .footer-redes{
-display: flex;
-flex-direction: column;
-padding-top: 38px;
-padding-right: 10px;
-padding-bottom: 30px;
-}
-
-footer .footer-redes a{
-width: 22px;
-height: 22px;
-font-size: 13px;
-margin-top: 3px;
-}
-
-#btnTop,
-#btnTop i{
-width: 0;
-height: 0;
-padding: 0;
-margin: 0;
-display: none;
-}
-}
-
-
-/*Responsivo para mobile começa aqui */
-@media (max-width: 600px) {
-    .cardInfo{
-        flex-direction: column;
+    width: 100vh;
+    justify-content: space-between;
+}
+.conteinetFistSection span{
+    display: inline-grid;
+}
+
+@media screen and (max-width: 780px) {
+    
+    .NossoPublico p{
+        font-size: medium;
+        
+    }
+    #ButtonHeader{
+        width: 50px;
+    }
+    .RedesContato{
+        display: flex;
+    }
+    .NavHeader a {
+        font-size: smaller;
+    }
+    #map{
+        max-width: 780px;
+        margin: 10vh 0;
+    }
+    #ImgFootet{
+        display: none;
+    }
+    #InformacoesdeContato{
+        display: block;
+    }
+
+    /* Suas regras CSS para telas com largura máxima de 780 pixels aqui */
+    .textMobile p{
+        color: #ffffffe2;
+        display: block;
+        font-size: x-large;
+        font-weight: 600;
+    }
+    .TextCard{
+        display: none;
+    }
+    .InformacoesCursos{
+        display: block;
+    }
+    footer ul {
+        display: none;
+    }
+    .InfoImg{
+        block-size: 20px;
+    }
+    #Patrocinio{
+        padding: 10px;
+    }
+    #imgPatricinio{
+        block-size: 30px;
+    }
+    #imgPatricinio2{
+        block-size: 33px;
+    }
+    #imgPatricinio3{
+        block-size: 26px;
+    }
+    #InfoImg{
+        block-size: 400px;
+        margin-bottom: 20px;
+    }
+    .textinf p{
+        text-align: justify;
+    }
+    .InformacoesCursos{
+        justify-content: center;
         align-items: center;
+        text-align: center;
     }
-
-    #card2{
-        flex-direction: column;
+    .textinf{
+        margin: auto;
     }
+    .Sobre{
+        padding: 0;
+        margin-top: 100px;
+    }
+    .textinf p{
+        padding-bottom: 50px;
+    }
+    .conteinetFistSection span {
+        height: 100px;
+        width: 100px;
+        background-color: #03334D;
+        margin: 10px;
+    }
+    .NossoPublico div{
+        padding: 0%;
+    }
+    #ImgHeader{
+        display: none;
+    }
+    .textMobile{
+        padding: 100px 0;
+        margin: auto;
 
-    #imgInfo {
-        width: 350px;
-        height: 260px;
-        background-color: #352020;
-        }
+    }
+    .textMobile p{
+        text-align: center;
+    }
+    .TextCard button{
+        display: block;
+    }
+    .NossoPublico h1 {
+        padding: 25px 0;
+    }
+    #InformacoesdeContato{
+        padding: 0%;
+    }
+    .textfoter p{
+        width: 100%;
+        text-align: justify;
         
-        .textnfo {
-        width: 350px;
-        }
-} 
-  h1{
-    color: white;
-    
-  }
-      </style>
- 
-  <title>Oficinas do Pilar</title>
-</head>
-
-<body>
-  <header>
-    <div class="log"></div>
-    <nav class="navHeader">
-
-      <ul>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Oficinas</a></li>
-        <li><a href="#">Quem somos</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </nav>
-    <button>Login</button>
-  </header>
-  <section class="Apresentação">
-    <div class="texto">
-      <h2>Bem-vindos a </h2>
-      <div class="label">
-        <h2>Oficina</h2>
-        <h2>Do Pilar</h2>
-      </div>
-      <button id="conheça_projeto" onclick="(() => { console.log(window.location.href = './index2.html')})()">
-        <p id="a">Conheça o projeto</p>
-        
-      </button>
-    </div>
-    <div class="img">
-      <img src="">
-    </div>
-
-  </section>
-
-  <section class="mainCards">
-   
-    <h2>Oficinas</h2>
-    <div class="cards">
-      <div class="card">
-        <div class="imgCard"></div>
-        <div class="texCard">
-          <p>tem por objetivo apresentar as manobras basicas de salvar vidas e capacita-los. A oficina contará com explanação das ações de primeiros socorros.
-          </p>
-          </div>
-      </div>
-      <div class="card">
-        <div class="imgCard"></div>
-        <div class="texCard">
-          <p>busca explorar a relação entre as cores, ambientes e bem-estar, alem de abordar os cuidado nescessário para um trabalho de qualidade e durabiliddae.
-            </p>
-          </div>
-      </div>
-      <div class="card">
-        <div class="imgCard"></div>
-        <div class="texCard">
-          <p>tem por objetivo incentivar e promover a reflexão sobre a relação entre culinária, prazer,saúde e cultura. durante a realização, os participantes estarão todos equipados.
-            </p>
-          </div>
-      </div>
-      <div class="card">
-        <div class="imgCard"></div>
-        <div class="texCard">
-          <p>tem por objetivo aprender, desenvolver e aperfeiçoar as técnicas de costura envolvendo tricÔ e afins.</p>
-        </div>
-      </div>
-    </div>
-    <section class="parallax-frase">
-      <div class="fraseImpactante">
-        <br />
-        <h2>Frase do Dia</h2>
-        <p>
-
-          Você atingirá o sucesso quando apresentar com orgulho as cicatrizes <br />
-          que adquiriu ao longo da sua jornada.
-
-        </p>
-      </div>
-
-    </section>
-    <br>
-
-    <section>
-      <h3 class="li-título">Sobre</h3>
-      <section class="infoCusrsos">
-        <section id="card" class="cardInfo">
-          <div id="imgInfo"></div>
-          <div class="textnfo">
-            <h4>Apoio a comunidade#1</h4>
-            <p>Oferecemos cursos práticos em diversas áreas para enriquecer habilidades, criar empregos locais, impulsionar empreendedorismo e contribuir para o desenvolvimento econômico da comunidade. Capacitamos jovens, investindo no futuro e fortalecendo laços.</p>
-          </div>
-        </section>
-      </section>
-      <chat-bot platform_id="ada6ac5c-9085-427a-ac55-f0e022369b01" user_id="08b7a2bf-a2ab-4d75-a7c2-39b2ffeab4cb" chatbot_id="12615a8c-566f-436f-8a73-094d793b2073"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">[chatbot]</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script>
-
-      
-        <section class="infoCusrsos">
-      <section id="card2" class="cardInfo">
-        <div id="imgInfo"></div>
-        <div class="textnfo">
-          <h4>auto sustentabilidade#2</h4>
-          <p>
-            Projeto oferece cursos práticos a jovens de 17 a 24 anos, ensinando habilidades em pintura, culinária, marcenaria, primeiros socorros e costura. Capacitamos para o trabalho ou empreendedorismo, promovendo independência financeira e impacto positivo na vida deles e da comunidade.</p>
-        </div>
-      </section>
-        </section>
-      
-      <section class="infoCusrsos">
-        <section id="card" class="cardInfo">
-        <div id="imgInfo"></div>
-        <div class="textnfo">
-          <h4>crie sua propria renda#3</h4>
-          <p>Projeto oferece cursos práticos em pintura, culinária, marcenaria, primeiros socorros e costura, capacitando para negócios próprios, serviços autônomos ou empregos, promovendo independência financeira e crescimento econômico local.
-          </p>
-        </div>
-        </section>
-      </section>
-    </section>
-       
-
-    <div class="parallax-2">
-        <div class="parallax-text">
-          <span>Nosso Publico</span>
-            <h1>
-              Somos cidadãos com sede de capacitar
-              os moradores da comunidade do Pilar e
-              promover o auto sustento de cada indivíduo
-               de forma prática, rápida e eficaz
-            </h1>
-
-    
-        </div>
-    </div>
-
-    <div class="infos">
-        <div class="infos-left">
-            <div class="infos-section">
-                <a class="infos-section-botoes" href="#"><i class="fa-solid fa-phone-flip"></i></a>
-                <div class="infos-texts">
-                    <span>Fale Conosco</span>
-                    <br>
-                    <p>(81) 666999</p>
-                </div>
-            </div>
-
-            <div class="infos-section">
-                <a class="infos-section-botoes" href="#" target="_blank"><i
-                        class="fa-solid fa-envelope"></i></a>
-                <div class="infos-texts">
-                    <span><a href="#" target="_blank">Enviar Email</a></span>
-                    <br>
-                    <p>oficinasd0pila@gmail.com</p>
-                </div>
-            </div>
-
-            <div class="infos-section">
-                <a class="infos-section-botoes" href="#"
-                    target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <div class="infos-texts">
-                    <span><a href="#" target="_blank">Siga nossa
-                            Página</a></span>
-                            <br>
-                    <p>@oficinasdopilar</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="map"></div>
-
-    </div>
-
-    <div id="btnTop">
-        <i class="fa-solid fa-arrow-up"></i>
-    </div>
-    <script>
-        const btn = document.getElementById("btnTop")
-
-btn.addEventListener("click", function(){
-    window.scrollTo(0,0)
-})
-
-document.addEventListener('scroll',ocultar)
-
-function ocultar(){
-    if(window.scrollY > 10){
-        btn.style.display = "flex"
-    } else {
-        btn.style.display = "none"
     }
 }
 
-ocultar()
-    </script>
+.contatos ul{
+    list-style: none;
 
-<div class="parcerias">
-  <span>Organizações e Empresas parceiras:</span>
-  <div class="parcerias-logos">
-    <div><img src="download-removebg-preview.png" alt="parceriaa 1"></div>
-    <div><img src="download-removebg-preview.png" alt="parceria 2"></div>
-    <div><img src="download-removebg-preview.png" alt="parceria 3"></div>
-    <div><img src="download-removebg-preview.png" alt="parceria 4"></div>
-  </div>
-</div>  
+}
 
 
+.textinf{
+    margin: auto;
+}
+.textinf h2{
+    margin-bottom: 10px;
+}
+.textinf p{
+    margin-bottom: 60px;
+}
 
-    <footer>
-        <img src="img/image2.png" alt="">
+.container {
+    margin: auto;
+    padding: 20vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    width: 100%;
+}
 
-        <div class="column">
+.contatos {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #105abb;
+}
+
+.mapa {
+    flex: 1;
+    height: 300px; /* Defina a altura desejada para o mapa */
+    background-color: #e0e0e0;
+}
+
+.textfooter{
+    width: 40%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mapa Style */
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    width: 100%;
+}
+
+.contatos {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+.mapa {
+    flex: 1;
+    height: 300px; /* Defina a altura desejada para o mapa */
+    background-color: #e0e0e0;
+}
+
+
+.VideoSection video{
+  width: 500px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.textfoter{
+display: none;
+}
+footer{
+    justify-content: flex-start;
+}
+
+.conteinetFistSection span:hover{
+
+    animation: 0.5s anim-div;
+}
+@keyframes anim-div {
+    0%{transform:scale(0.8);}
+    100%{transform: scale(1.0);}
+}
+
+@media (max-width: 780px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .textfoter{
+    display: block;
+    color: #CDCDCD;
+    }
+  
+}
+.VideoSection{
+  display: flex;
+  justify-content: center;
+}
+.VideoSection video{
+  width: 300px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+#TextVideo{
+ text-align: center;
+  color: #0a2446;
+  margin-bottom: 10px;
+  
+  
+}
+#TextVideo2{
+  text-align: center;
+  color: #0a2446;
+  margin-bottom: 30px;
+}
+
+    </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+<body>
+    <nav class="NavHeader">
+        <div class="logoHeader"> <img id="ImgLogo" src="./assets/image 8.png" alt="logo"></div>
+        <ul>
+            <li><a href="./sobrepage.html">Sobre</a></li>
+            <li><a href="./oficina.html">Oficina</a></li>
+            <li><a href="#">Contatos</a></li>
+        </ul>
+        <div class="Buttom">
+            <button id="ButtonHeader">Login</button>
+        </div>
+    </nav>
+    <header>
+     
+        <div class="CardHeader">
+
+            <div class="TextCard">
+                <ul>
+                    <li>
+                        <p>Bem-Vindo o</p>
+                    </li>
+                    <li>
+                        <h2>Profisionaliza <br> Pilar</h2>
+
+                    </li>
+                    <li>
+                        <button>Saiba Mais</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="ImgCard"><img id="ImgHeader" src="./assets/sorridente-menina-adolescente-bonito-usando-laptop-sobre-parede-branca 1.png"></div>
+
+            <div class="textMobile">
+                <p>Conheca o Profissionaliza</p>
+            </div>
+        </div>
+
+
+
+
+
+    </header>
+    <div class="barra">
+        
+    </div>
+
+    <ul id="Patrocinio">
+        <li><img id="imgPatricinio3" src="./ListPatrocinio/Untitled/image 11.png" alt=""></li>
+        <li><img id="imgPatricinio" src="./ListPatrocinio/Untitled/image 4.png" alt=""></li>
+        <li><img id="imgPatricinio" src="./ListPatrocinio/Untitled/image 5.png" alt=""></li>
+        <li><img  id="imgPatricinio" src="./ListPatrocinio/Untitled/image 6.png" alt=""></li>
+        <li><img id="imgPatricinio2" src="./ListPatrocinio/Untitled/unnamed (1) 1.png" alt=""></li>
+
+    </ul>
+    <section>
+        <p id="titleConfira">Confira nosssos cursos:</p>
+
+        <div class="conteinetFistSection">
+            <span>
+                 <img src="./assets/tesouras.png">
+                 <p>Corte e Custura</p>
+            </span>
+            <span>
+                <img src="./assets/garcom.png">
+                <p>Garçom e Garçonete</p>
+            </span>
+            <span>
+                <img src="./assets/pincel.png">
+                <p>Pintura</p>
+            </span>
+            <span>
+                <img src="./assets/enfrentar.png">
+                <p>Estetica</p>
+            </span>
+            <span>
+                <img src="./assets/mais.png">
+                <p>Outros Mais</p>
+            </span>
+        </div>
+    </section>
+    <!-- Sobre o  -->
+    <section class="Sobre">
+        <h1>Saiba mais sobre o nosso projeto:</h1>
+        <p id="QuemSomos"></p>
+        <div class="InformacoesCursos">
+            <!-- <img src="./ListPatrocinio/Rectangle 303.png" id="InfoImg"></img> -->
+            <div class="textinf">
+
+            <h2>Por que devo participar do Profissionaliza Pilar?</h2>
+            <h3>Oportunidade de Aprendizado Prático:</h3>
+            <p>O programa oferece cursos práticos que visam desenvolver habilidades diretamente aplicáveis no mercado de trabalho, proporcionando uma experiência mais relevante e valiosa.</p>
+            <h3>Acessibilidade e Inclusividade:</h3>
+            <p>A iniciativa se esforça para ser acessível e inclusiva, tornando os cursos disponíveis a todos, independentemente de sua situação financeira. A bolsa mensal de R$50 ajuda a aliviar preocupações financeiras, permitindo que os participantes se concentrem em seus estudos.</p>
+            
+            <h3>Transformação Pessoal e Profissional:</h3>
+            <p>Participar do "Profissionaliza Pilar" não é apenas sobre adquirir habilidades técnicas, mas também sobre se transformar como indivíduo. A educação é vista como o catalisador para um futuro mais brilhante e igualitário, e sua participação pode contribuir para essa visão.</p>
+            
+            <h2>O que o projeto tas para minha comunidade?</h2>
+            <h3>Transformação Social:</h3>
+            <p>A participação no projeto não apenas fornece habilidades técnicas, mas também se encaixa em uma visão maior de transformação social, onde a educação atua como um catalisador para um futuro mais brilhante e igualitário.</p>
+            <h3>Contribuição para a Inclusividade e Diversidade no Mercado de Trabalho:</h3>
+            <p>Ao capacitar os moradores com habilidades práticas, o projeto contribui para uma sociedade mais inclusiva e igualitária, promovendo oportunidades igualitárias para mulheres e contribuindo para um ambiente de trabalho mais diversificado.</p>
+            <h2>Sobre o nosso publico? </h2>
+            <h3>Devo ter algum conhecimento previo:</h3>
+            <p>Para participar da iniciativa "Profissionaliza Pilar", não e necessário, basta so a vontade de aprender e a busca por uma carreira profissional</p>
+            <h3>O nosso publico alvo:</h3>
+            <p>Direcionamos nosso projeto para aqueles jovens 17 a 30 e que  buscam iniciar a sua carreira profissional. 
+            </p>
+        </div>
+          
+        
+        </div>
+
+    <div id="ConteinerContato">
+    <section class="NossoPublico">
+        <div>
+        <h1>Nosso objetivo</h1>
+        <p>O verdadeiro propósito de "Profissionalizar Pilar " é democratizar a todos acesso ao mercado de trabalho. Ao capacitar jovens com habilidades práticas, estamos construindo uma sociedade mais inclusiva e proporcionando oportunidades igualitárias.</p>
+        </div>
+      
+    </section>
+      
+      </section>
+    <div class="container">
+        <div class="contatos">
+            <h2>Informações de Contato</h2>
             <ul>
-                <li class="li-título">Navegação</li>
-                <li><a href="#">Home <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                <li><a href="#">ENSINE NAS Oficina<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </li>
-                <li><a href="#">SEJA PARCEIRO <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                <li><a href="#">FALE Conosco <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li>Av. Ruo Branco</li>
+                <li>Telefone: (123) 456-7890</li>
+                <li>Email: exemplo@example.com</li>
             </ul>
         </div>
-
-        <div class="column">
-            <ul>
-                <li class="li-título">Sobre nós</li>
-                <li><a href="#" target="_blank">Pitch <i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                <li><a href="#">YOUTUBE <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                <li><a href="#" target="_blank">INSTAGRAM <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-            </ul>
+        <div class="mapa">
+            <!-- Adicione aqui o código do Google Maps ou outro mapa de sua escolha -->
+            <!-- Exemplo usando um iframe do Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.782371342227!2d-122.41941678468215!3d37.77492937976117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e7403f30000%3A0x2d778e3c89a063a7!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1626745528072!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-
-        <div class="column">
-            <ul>
-                <li class="li-título">Suporte</li>
-                <li><a href="#">Contato <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                <li><a href="#" target="_blank">Gmail <i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                <li><a href="#">CHAT BOT <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-            </ul>
-        </div>
-
-        <div class="footer-redes">
-            <a href="#" target="_blank">
-                <i class="fa-brands fa-instagram"></i></a>
-            <a class href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-            <a href="#" target="_blank">
-                <i class="fa-brands fa-youtube"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
-        </div>
-    </footer>
+    </div>
 
 
 
-</html>
+<div class="barra">
+        
+</div>
+
+<footer>
+    
+    <div class="textfoter">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt molestias mollitia, dolor tempore ipsa et? Quasi, provident commodi fugiat tenetur maiores, possimus illo doloremque quas aliquid impedit ad hic labore?</p>
+    </div>
+    <div class="listfooter">
+        <!--  -->
+        <ul>
+            <li><h3>Programção</h3></li>
+            <li><p>Lucas Henrique</p></li>
+            <li><p>Lucas Egrinaldo</p></li>
+            <li><p>Talis</p></li>
+            <li><p>Izabella Palmera</p></li>
+            <li><p>Breno</p></li>
+
+        </ul>
+        <ul>
+        <!-- Desing -->
+        <li><h3>Desing:</h3></li>
+        <li><p>Izabella Palmera</p></li>
+        <li><p>Jõao ( Nelp )</p></li>
+        <li><p>Mateus</p></li>
+    </ul>
+    
+
+        <ul>
+        <!-- Pesquisa -->
+        <li><h3>Pesquisa:</h3></li>
+        <li><p>Gabriel</p></li>
+        <li><p>Emilly</p></li>
+        <li><p>Egrinaldo</p></li>
+        <li><p>Breno</p></li>
+
+        </ul>
+
+        <ul>
+        <!-- Alxuliar -->
+        <li><h3>Ajudantes:</h3></li>
+        <li><p>Vinicios Junior</p></li>
+        <li><p>Bruna</p></li>
+        <li><p>Danilo</p></li>
+
+        </ul>
+
+    </div>
+</footer>
+<span id="Copy"><p>&copy;2023 site prototipo não comercial</p></span>
+
 </body>
-
-<script>
-
-  /*mapa*/
-  var map = L.map('map', {
-  center: [-8.0574079,-34.8720058,17.66],
-  zoom: 16
-});
-
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  maxZoom: 19,
-  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);
-
-var marker = L.marker([-8.0574079,-34.8720058,17.66]).addTo(map);
-marker.bindPopup("<b>Escola Nosa senhora do pilar</b><br>Rua bernado vieira de melo").openPopup();
-
-</script>
-
 </html>
