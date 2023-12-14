@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Sobre a Iniciativa</title>
+       
+    <script src="https://kit.fontawesome.com/bc48bd619e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
 *{
@@ -633,6 +640,134 @@ footer{
   margin-bottom: 30px;
 }
 
+/*mapa*/
+
+
+/* Seção esquerda das infos */
+
+.infos-left{
+display: flex;
+flex-direction: column;
+padding-top: 20px;
+}
+
+.infos-section{
+display: flex;
+flex-direction: row;
+padding-bottom: 15px;
+}
+
+.infos-texts{
+display: flex;
+flex-direction: column;
+padding-left: 20px;
+padding-top: 25px;
+}
+
+.infos-texts span{
+font-family: PoppinsMedium;
+line-height: 1px;
+font-size: 17px;
+color: rgb(2, 1, 1);
+}
+
+.infos-texts span a{
+text-decoration: none;
+color: rgb(3, 2, 2);
+}
+
+.infos-texts p{
+font-family: PoppinsMedium;
+color: #ffffff;
+font-size: 15px;
+}
+
+.infos-section img{
+width: 50px;
+}
+
+.infos-section-botoes{
+display: inline-flex;
+width: 75px;
+height: 75px;
+background-color: #2673A5;
+color: white;
+margin: 0 6px;
+border-radius: 50px;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+transition: 0.4s;
+}
+
+.infos-section-botoes{
+text-decoration: none;
+}
+
+.infos-section-botoes:hover{
+background-color: #154A6C;
+}
+
+.infos-section i{
+transition: 0.4s all;
+}
+
+.infos-section-botoes:hover > i{
+transform: scale(1.6) rotate(25deg);
+}
+
+/* Mapa da parte infos*/
+
+#map{
+height: 300px; 
+width: 50%;
+}
+
+/* Botão de subir */
+
+#btnTop{
+text-decoration: none;
+color: white;
+background-color: #0a3753be;
+padding-top: 12px;
+padding-bottom: 15px;
+padding-left: 15px;
+padding-right: 15px;
+position: fixed;
+right: 40px;
+bottom: 90px;
+transition: .3s;
+border-radius: 15px;
+}
+
+#btnTop:hover{
+background-color: #2673A5;
+transform: scale(1.03);
+}
+
+
+
+/* INFOS */
+
+.infos{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+padding-bottom: 50px;
+padding-top: 50px;
+}
+
+/* Mapa da parte infos*/
+
+#map{
+height: 200px; 
+width: 40%;
+margin-top: 5.5%;
+}
+
+
+
     </style>
   <link rel="shortcut icon" href="image 8.png" type="imgfavicon">
 
@@ -642,8 +777,8 @@ footer{
     <nav class="NavHeader">
         <div class="logoHeader"> <img id="ImgLogo" src="image 8.png" alt="logo"></div>
         <ul>
-            <li><a href="sobrepage.html">Sobre</a></li>
-            <li><a href="oficina.html">Oficina</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./oficina.html">Oficina</a></li>
             <li><a href="#">Contatos</a></li>
         </ul>
         <div class="Buttom">
@@ -657,7 +792,7 @@ footer{
             <div class="TextCard">
                 <ul>
                     <li>
-                        <p>Bem-Vindo ao</p>
+                        <p>Bem-Vindo a</p>
                     </li>
                     <li>
                         <h2>Profisionaliza <br> Pilar</h2>
@@ -725,22 +860,67 @@ footer{
     <div id="ConteinerContato">
 
 
-    <div class="container">
-        <div class="contatos">
-            <h2>Informações de Contato</h2>
-            <ul>
-                <li>R. Bernardo Vieira de Melo, 289-229</li>
-                <li>Telefone: (81) 99955-6970
-</li>
-                <li>Email: profissionalizapilar@gmail.com</li>
-            </ul>
+        <div class="infos">
+            <div class="infos-left">
+                <div class="infos-section">
+                    <a class="infos-section-botoes" href="#"><i class="fa-solid fa-phone-flip"></i></a>
+                    <div class="infos-texts">
+                        <span>Fale Conosco</span>
+                        <br>
+                        <p>(81) 666999</p>
+                    </div>
+                </div>
+    
+                <div class="infos-section">
+                    <a class="infos-section-botoes" href="#" target="_blank"><i
+                            class="fa-solid fa-envelope"></i></a>
+                    <div class="infos-texts">
+                        <span><a href="#" target="_blank">Enviar Email</a></span>
+                        <br>
+                        <p>oficinasd0pila@gmail.com</p>
+                    </div>
+                </div>
+    
+                <div class="infos-section">
+                    <a class="infos-section-botoes" href="#"
+                        target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <div class="infos-texts">
+                        <span><a href="#" target="_blank">Siga nossa
+                                Página</a></span>
+                                <br>
+                        <p>@oficinasdopilar</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="map"></div>
+    
         </div>
-        <div class="mapa">
-            <!-- Adicione aqui o código do Google Maps ou outro mapa de sua escolha -->
-            <!-- Exemplo usando um iframe do Google Maps -->
-            <iframe src="https://www.google.com/maps/place/Escola+Municipal+de+Tempo+Integral+Nossa+Senhora+do+Pilar/@-8.0570143,-34.8707502,18.76z/data=!4m15!1m8!3m7!1s0x80859a6d00690021:0x4a501367f076adff!2sSan+Francisco,+CA!3b1!8m2!3d37.7749295!4d-122.4194155!16zL20vMGQ2bHA!3m5!1s0x7ab197f6369a5c3:0x1a29b8c5caab6ba6!8m2!3d-8.056801!4d-34.8706222!16s%2Fg%2F11r_pys746?hl=en&entry=ttu" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    
+        <div id="btnTop">
+            <i class="fa-solid fa-arrow-up"></i>
         </div>
-    </div>
+        <script>
+            const btn = document.getElementById("btnTop")
+    
+    btn.addEventListener("click", function(){
+        window.scrollTo(0,0)
+    })
+    
+    document.addEventListener('scroll',ocultar)
+    
+    function ocultar(){
+        if(window.scrollY > 10){
+            btn.style.display = "flex"
+        } else {
+            btn.style.display = "none"
+        }
+    }
+    
+    ocultar()
+        </script>
+    
+    
 
 
 
@@ -797,4 +977,23 @@ footer{
 <span id="Copy"><p>&copy;2023 site prototipo não comercial</p></span>
 
 </body>
+
+<script>
+
+    /*mapa*/
+    var map = L.map('map', {
+    center: [-8.0574079,-34.8720058,17.66],
+    zoom: 16
+  });
+  
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+  
+  var marker = L.marker([-8.0574079,-34.8720058,17.66]).addTo(map);
+  marker.bindPopup("<b>Escola Nosa senhora do pilar</b><br>Rua bernado vieira de melo").openPopup();
+  
+  </script>
+  
 </html>
